@@ -3,6 +3,7 @@ import BasicImage from './routes/basic-image';
 import GeojsonPolygon from './routes/geojson-polygon';
 import GeojsonHexagon from './routes/geojson-hexagon';
 import ArcsData from './routes/arcs-data';
+import RingsData from './routes/rings-data';
 import NotFound from './routes/not-found';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
           <Route path='geojson-polygon' element={<GeojsonPolygon />} />
           <Route path='geojson-hexagon' element={<GeojsonHexagon />} />
           <Route path='arcs-data' element={<ArcsData />} />
+          <Route path='rings-data' element={<RingsData />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
