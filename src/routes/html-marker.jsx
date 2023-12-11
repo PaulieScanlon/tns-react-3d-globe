@@ -1,6 +1,6 @@
 import Globe from 'react-globe.gl';
 
-import globeImage from '../assets/earth-night.jpg';
+import globeImage from '../assets/earth-dark.jpg';
 
 const Page = () => {
   const myData = [

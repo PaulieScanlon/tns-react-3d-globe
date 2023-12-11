@@ -6,3 +6,6 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+[Earth Images](https://unpkg.com/browse/three-globe@2.30.0/example/img/)
+[Earth Data](https://unpkg.com/browse/world-atlas@2.0.2/)

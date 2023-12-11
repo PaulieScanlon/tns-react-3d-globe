@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import Globe from 'react-globe.gl';
 import * as THREE from 'three';
 
-import globeImage from '../assets/earth-night.jpg';
+import globeImage from '../assets/earth-dark.jpg';
 
 const Page = () => {
   const globeEl = useRef(null);

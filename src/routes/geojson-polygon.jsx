@@ -1,6 +1,6 @@
 import Globe from 'react-globe.gl';
 
-import globeJson from '../assets/ne_110m_admin_0_countries.json';
+import globeJson from '../assets/countries_110m.json';
 
 const Page = () => {
   const myData = [
