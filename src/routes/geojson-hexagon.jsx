@@ -27,11 +27,8 @@ const Page = () => {
   return (
     <div className='cursor-move'>
       <Globe
-        polygonsData={globeJson.features}
-        polygonCapColor={(geometry) => {
-          return ['#0000ff', '#0000cc', '#000099', '#000066'][geometry.properties.abbrev_len % 4];
-        }}
-        polygonSideColor={(geometry) => {
+        hexPolygonsData={globeJson.features}
+        hexPolygonColor={(geometry) => {
           return ['#0000ff', '#0000cc', '#000099', '#000066'][geometry.properties.abbrev_len % 4];
         }}
         pointsData={myData}
