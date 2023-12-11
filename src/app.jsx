@@ -5,6 +5,8 @@ import GeojsonHexagon from './routes/geojson-hexagon';
 import ArcsData from './routes/arcs-data';
 import RingsData from './routes/rings-data';
 import HTMLMarker from './routes/html-marker';
+import CustomLayer from './routes/custom-layer';
+
 import NotFound from './routes/not-found';
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
           <Route path='arcs-data' element={<ArcsData />} />
           <Route path='rings-data' element={<RingsData />} />
           <Route path='html-marker' element={<HTMLMarker />} />
+          <Route path='custom-layer' element={<CustomLayer />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
