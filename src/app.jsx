@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import Finished from './routes/finished';
 import BasicImage from './routes/basic-image';
 import GeojsonPolygon from './routes/geojson-polygon';
 import GeojsonHexagon from './routes/geojson-hexagon';
@@ -11,10 +12,11 @@ import NotFound from './routes/not-found';
 
 const App = () => {
   return (
-    <main>
+    <main className='bg-black w-screen h-screen'>
       <Routes>
         <Route path='/'>
-          <Route index element={<BasicImage />} />
+          <Route index element={<Finished />} />
+          <Route path='basic-image' element={<BasicImage />} />
           <Route path='geojson-polygon' element={<GeojsonPolygon />} />
           <Route path='geojson-hexagon' element={<GeojsonHexagon />} />
           <Route path='arcs-data' element={<ArcsData />} />
