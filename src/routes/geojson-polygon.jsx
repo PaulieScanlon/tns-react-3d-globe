@@ -1,6 +1,8 @@
 import Globe from 'react-globe.gl';
 
-const BasicGlobe = () => {
+import globeJson from '../assets/ne_110m_admin_0_countries.json';
+
+const Page = () => {
   const myData = [
     {
       lat: 29.953204744601763,
@@ -24,9 +26,17 @@ const BasicGlobe = () => {
 
   return (
     <div className='cursor-move'>
-      <Globe globeImageUrl='/earth-night.jpg' pointsData={myData} pointAltitude='altitude' pointColor='color' />
+      <Globe
+        polygonsData={globeJson.features}
+        polygonAltitude={0.1}
+        polygonCapColor={() => '#0000ff'}
+        polygonSideColor={() => '#0000cc'}
+        pointsData={myData}
+        pointAltitude='altitude'
+        pointColor='color'
+      />
     </div>
   );
 };
 
-export default BasicGlobe;
+export default Page;

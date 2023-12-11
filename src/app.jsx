@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import BasicGlobe from './routes/basic-globe';
-import JsonGlobe from './routes/json-globe';
+import Image from './routes/image';
+import GeojsonPolygon from './routes/geojson-polygon';
 import NotFound from './routes/not-found';
 
 const App = () => {
@@ -8,8 +8,8 @@ const App = () => {
     <main>
       <Routes>
         <Route path='/'>
-          <Route index element={<BasicGlobe />} />
-          <Route path='json-globe' element={<JsonGlobe />} />
+          <Route index element={<Image />} />
+          <Route path='geojson-polygon' element={<GeojsonPolygon />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
