@@ -38,9 +38,9 @@ const Page = () => {
         globeImageUrl={globeImage}
         ringsData={myData}
         ringMaxRadius='radius'
-        ringColor={(ring) => (t) => {
+        ringColor={(ring) => (time) => {
           const { red, green, blue } = hexRgb(ring.color);
-          return `rgba(${red},${green},${blue},${Math.sqrt(1 - t)})`;
+          return `rgba(${red},${green},${blue},${Math.sqrt(1 - time)})`;
         }}
         ringPropagationSpeed='speed'
         ringRepeatPeriod='repeat'
