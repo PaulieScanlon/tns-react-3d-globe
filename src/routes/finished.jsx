@@ -21,7 +21,7 @@ const arcsData = sliceData.map(() => {
     endLat: sliceData[randEnd].lat,
     endLng: sliceData[randEnd].lng,
     time: randTime,
-    color: ['#ffffff', '#ffffff00', '#ffffff'],
+    color: ['#ffffff00', '#faf7e6', '#ffffff00'],
   };
 });
 
@@ -50,8 +50,8 @@ const Page = () => {
         rendererConfig={{ antialias: true, alpha: true }}
         globeMaterial={
           new THREE.MeshPhongMaterial({
-            color: '#121220',
-            opacity: 0.9,
+            color: '#1a2033',
+            opacity: 0.95,
             transparent: true,
           })
         }
@@ -62,11 +62,11 @@ const Page = () => {
         pointAltitude={0.01}
         pointRadius={0.2}
         pointResolution={5}
-        pointColor={() => '#f0cf68'}
+        pointColor={() => '#eed31f'}
         arcsData={arcsData}
         arcAltitudeAutoScale={0.3}
         arcColor='color'
-        arcStroke={0.4}
+        arcStroke={0.5}
         arcDashGap={2}
         arcDashAnimateTime='time'
         polygonsData={topojson.feature(landTopology, landTopology.objects.land).features}
@@ -83,7 +83,7 @@ const Page = () => {
           lat: (Math.random() - 1) * 360,
           lng: (Math.random() - 1) * 360,
           altitude: Math.random() * 2,
-          size: Math.random() * 0.3,
+          size: Math.random() * 0.4,
           color: '#faadfd',
         }))}
         customThreeObject={(sliceData) => {
