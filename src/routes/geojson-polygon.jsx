@@ -34,6 +34,7 @@ const Page = () => {
         polygonSideColor={(geometry) => {
           return ['#0000ff', '#0000cc', '#000099', '#000066'][geometry.properties.abbrev_len % 4];
         }}
+        polygonAltitude={0.08}
         pointsData={myData}
         pointAltitude='altitude'
         pointColor='color'
