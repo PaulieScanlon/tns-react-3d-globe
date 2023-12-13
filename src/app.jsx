@@ -12,9 +12,7 @@ import NotFound from './routes/not-found';
 
 const App = () => {
   return (
-    <main
-    // className='bg-black w-screen h-screen'
-    >
+    <main>
       <Routes>
         <Route path='/'>
           <Route index element={<Finished />} />
